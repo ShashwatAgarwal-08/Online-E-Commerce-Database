@@ -1,5 +1,4 @@
-# Online-E-Commerce-Database
-
+# Online E-Commerce Database System
 
 This project is a **relational database** designed for an **online e-commerce platform**. It includes tables for managing users, products, orders, and transactions using SQL.
 
@@ -23,8 +22,16 @@ This project is a **relational database** designed for an **online e-commerce pl
 - SQL Client (MySQL Workbench, phpMyAdmin, or CLI)
 
 ### **Steps to Run the Database**
-1. Download `dbms.sql` file.
-2. Open your MySQL client.
-3. Create a new database:
-   ```sql
-   CREATE DATABASE ecommerce_db;
+```bash
+# 1. Download dbms.sql file.
+# 2. Open your MySQL client.
+# 3. Create a new database:
+CREATE DATABASE ecommerce_db;
+
+# 4. Use the new database:
+USE ecommerce_db;
+
+# 5. Import the SQL file:
+mysql -u your_username -p ecommerce_db < dbms.sql
+
+# 6. If using MySQL Workbench, use the Import option.
